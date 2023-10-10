@@ -17,7 +17,7 @@ public class Catalog {
     @OneToOne(cascade = CascadeType.ALL)
 //    @JoinColumn(name = "book_isbn", referencedColumnName = "isbn", unique = true)
     @JsonIgnore
-    @JoinColumn(name = "book_isbn")
+    @JoinColumn(name = "book_id")
     private Book book;
 
     public Catalog() {

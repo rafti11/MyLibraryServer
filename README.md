@@ -2,8 +2,10 @@ Library server develop in java with spring boot
 
 
 Todo:
-- Add adn check user
+- Add and check user
 - Database inside docker
+- address entity
+- publisher entity
 
 
 
