@@ -64,7 +64,7 @@ public class BookController {
             try {
 
                 bookRepository.delete(bk);
-                return new ResponseEntity<>(msg, HttpStatus.GONE);
+                return new ResponseEntity<>(msg, HttpStatus.OK);
 
             } catch (DataIntegrityViolationException e) {
                 System.err.println(e.getMessage());

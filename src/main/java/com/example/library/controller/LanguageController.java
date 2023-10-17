@@ -58,7 +58,7 @@ public class LanguageController {
             try {
 
                 languageRepository.delete(la);
-                return new ResponseEntity<>(msg, HttpStatus.GONE);
+                return new ResponseEntity<>(msg, HttpStatus.OK);
 
             } catch (DataIntegrityViolationException e) {
                 System.err.println(e.getMessage());

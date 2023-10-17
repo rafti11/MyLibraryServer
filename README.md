@@ -6,6 +6,7 @@ Todo:
 - Database inside docker
 - address entity
 - publisher entity
+- Send author order by name
 
 
 

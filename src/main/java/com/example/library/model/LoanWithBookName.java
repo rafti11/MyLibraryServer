@@ -7,25 +7,14 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
-@Table(name = "loan")
+
 @Getter @Setter
-public class Loan {
+public class LoanWithBookName {
 
-    @Id
-    @Column(name = "date_out")
     private String dateOut;
-
-    @Column(name = "date_returned")
     private String dateReturned;
-
-    @Column(name = "date_due")
     private String dateDue;
-
-    @Column(name = "cod_client")
-    private int codClient;
-
-    @Column(name = "catalog_id")
-    private int catalogId;
+    private String title;
+//    private int catalogId;
 
 }
