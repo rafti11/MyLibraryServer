@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-@RequestMapping(value = "api/author")
+@RequestMapping(value = "/api/v1/author")
 @RestController
 public class AuthorController {
 

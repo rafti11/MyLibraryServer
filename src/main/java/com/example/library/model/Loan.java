@@ -22,8 +22,8 @@ public class Loan {
     @Column(name = "date_due")
     private String dateDue;
 
-    @Column(name = "cod_client")
-    private int codClient;
+    @Column(name = "client_id")
+    private int clientId;
 
     @Column(name = "catalog_id")
     private int catalogId;

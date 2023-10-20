@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@RequestMapping("api/loan")
+@RequestMapping("/api/v1/loan")
 @RestController
 public class LoanController {
 
