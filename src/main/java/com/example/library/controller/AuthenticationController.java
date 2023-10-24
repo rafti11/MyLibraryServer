@@ -5,11 +5,10 @@ import com.example.library.model.request.AuthenticateRequest;
 import com.example.library.model.request.AuthenticationResponse;
 import com.example.library.model.request.RegisterRequest;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/auth")
@@ -30,6 +29,11 @@ public class AuthenticationController {
 
         return ResponseEntity.ok(authenticationService.authenticate(request));
 
+    }
+
+    @GetMapping("istokenvalid")
+    public ResponseEntity<HttpStatusCode> isTokenValid() {
+        return ResponseEntity.ok(HttpStatusCode.valueOf(HttpStatus.OK.value()));
     }
     
 }
