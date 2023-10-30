@@ -47,7 +47,7 @@ public class AuthenticationService {
         Client client = clientRepository.findByEmail(request.getEmail()).orElseThrow();
 
         String token = jwtService.generateToken(client);
-        return AuthenticationResponse.builder().token(token).build();
+        return AuthenticationResponse.builder().userID(client.getId()).token(token).build();
 
     }
 

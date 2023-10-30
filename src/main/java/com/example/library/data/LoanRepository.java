@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface LoanRepository extends ListCrudRepository<Loan, Integer> {
 
-    @Query(value = "SELECT * FROM loan WHERE cod_client = ?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM loan WHERE client_id = ?1", nativeQuery = true)
     List<Loan> getLoansByClientId(int id);
 
 
